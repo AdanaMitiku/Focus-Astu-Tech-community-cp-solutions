@@ -1,0 +1,12 @@
+S = input()
+
+if len(S) != 8:
+    print("No")
+elif not (S[0].isupper() and S[-1].isupper()):
+    print("No")
+elif not S[1:7].isdigit():
+    print("No")
+elif not (100000 <= int(S[1:7]) <= 999999):
+    print("No")
+else:
+    print("Yes")
